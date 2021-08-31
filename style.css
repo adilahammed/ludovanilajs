@@ -32,7 +32,7 @@ body{
 }
 .cornerbox{
     background-color: white;
-    /* border: 0; */
+    border: 0;
 }
 .green{
     background-color: green;

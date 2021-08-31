@@ -17,7 +17,7 @@ const spin=()=>{
     console.log(color);
     console.log(num);
     changename(num)
-
+    
     if(num===1){
         let re=color
         let val=""
