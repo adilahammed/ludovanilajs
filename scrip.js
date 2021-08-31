@@ -17,8 +17,9 @@ const spin=()=>{
     console.log(color);
     console.log(num);
     changename(num)
-    
-    if(num===1){
+    let fmov= checkfirstmov(color)
+
+    if(num===1&&fmov===true){
         let re=color
         let val=""
         let mov=0
@@ -82,6 +83,7 @@ const changename=(num)=>{
 const changemove=(color,movval,ranndom)=>{
     let fiftcheck=movval+ranndom
     if(fiftcheck>52){
+        document.querySelector(`.num${movval}`).style.backgroundColor="lightcoral"
         let ne=fiftcheck-52
         movval=ne
         console.log("morethan 52"+"  "+fiftcheck+"  "+ne);
@@ -105,5 +107,22 @@ const updatemov=(color,val)=>{
     }
     else if(color==="blue"){
         bluemov=val
+    }
+}
+
+
+const checkfirstmov=(color)=>{
+    if(color==="red"&&redmov===0){
+        return true
+    }else if(color==="green" && greenmov===0 ){
+        return true
+    }
+    else if(color==="yellow" && yellowmov===0){
+        return true
+    }
+    else if(color==="blue" && bluemov===0){
+        return true
+    }else{
+        return false
     }
 }
