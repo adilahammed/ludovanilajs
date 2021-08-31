@@ -1,4 +1,9 @@
 
+// $(window).load(function() {
+//     // your code
+// });
+
+// document.querySelector("p").innerHTML=" "
 let red=1
 let green=1
 let yellow=1
@@ -11,8 +16,10 @@ const player=["red","green","blue","yellow"]
 let n=0
 // console.log(n);
 let color=player[n]
+let nextcolor=player[n+1]
 document.querySelector(".nowplay").innerHTML=color
 const spin=()=>{
+    
     const num=Math.floor(Math.random()*6)+1
     console.log(color);
     console.log(num);
@@ -70,6 +77,7 @@ const spin=()=>{
     if(n===4){
         n=0
     }
+    nextcolor=player[n+1]
     color=player[n]
     
 }
@@ -78,17 +86,19 @@ const spin=()=>{
 const changename=(num)=>{
     document.querySelector(".nowplay").innerHTML=color
     document.querySelector(".nowscore").innerHTML=num
+    document.querySelector("button").style.backgroundColor=nextcolor
+    
 }
 
 const changemove=(color,movval,ranndom)=>{
     let fiftcheck=movval+ranndom
     if(fiftcheck>52){
-        document.querySelector(`.num${movval}`).style.backgroundColor="lightcoral"
+        document.querySelector(`.num${movval}`).style.backgroundColor="white"
         let ne=fiftcheck-52
         movval=ne
         console.log("morethan 52"+"  "+fiftcheck+"  "+ne);
     }
-        document.querySelector(`.num${movval}`).style.backgroundColor="lightcoral"
+        document.querySelector(`.num${movval}`).style.backgroundColor="white"
         console.log("change move called"+color+movval);
         movval=movval+ranndom
         document.querySelector(`.num${movval}`).style.backgroundColor=color

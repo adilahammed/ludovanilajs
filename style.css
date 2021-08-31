@@ -21,17 +21,17 @@ body{
     display: flex;
     width: 750px;
     height: 50px;
-    background-color: lawngreen;
+    
 }
 .box{
     border: black solid 1px;
     display: inline-block;
-    background-color: lightcoral;
+    background-color:white;
     width: 50px;
     height: 50px;
 }
 .cornerbox{
-    background-color: white;
+    background-color:grey;
     border: 0;
 }
 .green{
@@ -47,6 +47,20 @@ body{
     background-color: blue;
 }
 button{
+    background-color: red;
     width: 200px;
     height: 100px;
+}
+.lightred{
+    background-color: rgb(223, 141, 141);
+    /* opacity: 0.5; */
+}
+.lightblue{
+    background-color: rgba(87, 87, 236, 0.432);
+}
+.lightyellow{
+    background-color: rgba(204, 204, 60, 0.678);
+}
+.lightgreen{
+    background-color: rgba(116, 221, 116, 0.575);
 }
