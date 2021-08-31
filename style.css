@@ -46,3 +46,7 @@ body{
 .blue{
     background-color: blue;
 }
+button{
+    width: 200px;
+    height: 100px;
+}
