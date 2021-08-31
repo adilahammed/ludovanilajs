@@ -4,48 +4,29 @@ body{
     
 }
 .board{ 
-    /* display: flex; */
+    display: flex;
     display: inline-block;
     background-color: gray;
     width: 750px;
     height: 750px;
 }
 .spinbutton{
-    width: 750px;
+    width: 700px;
     height: 750px;
     display: inline-block;
     background-color: green;
 }
-.cornerbox{
-    display: inline-block;
-    background-color: honeydew;
-    width: 250px;
-    height: 250px;
-}
-.rightbox{
-    float: right;
-    display: inline-block;
-}
-.leftbottom{
-    margin-top: 250px;    
 
-    display: inline-block;
-}
-.rightbottom{
-    display: inline-block;
-    margin-left: 245px ;
-}
-.numbox{
-    background-color: hotpink;
-    width: 240px;
-    height: 250px;
+.row{
     display: flex;
-    display: inline-block;
+    width: 750px;
+    height: 50px;
+    background-color: lawngreen;
 }
-.numbox1{
-    margin-left: 2px;
-    background-color: indigo;
-    height: 35px;
-    width: 35px;
+.box{
+    border: black solid 1px;
     display: inline-block;
+    background-color: lightcoral;
+    width: 50px;
+    height: 50px;
 }
